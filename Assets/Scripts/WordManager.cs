@@ -87,12 +87,12 @@ public class WordManager : MonoBehaviour {
 	}
 
     public void RemoveWord(Word wordToRemove)
-    {  // Check if the activeWord is the same as the wordToRemove
+    {
         if (hasActiveWord && activeWord == wordToRemove)
-        {  // If true, set hasActiveWord to false since the active word is being removed
+        {
             hasActiveWord = false;
         }
-        words.Remove(wordToRemove); // Remove the wordToRemove from the canvas.
+        words.Remove(wordToRemove);
     }
 
     void PauseGame()
